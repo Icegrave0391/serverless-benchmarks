@@ -1,0 +1,25 @@
+pselect6(0, NULL, NULL, NULL, {tv_sec=0, tv_nsec=995049201}, NULL) = 0 (Timeout)
+getcwd("/home/chuqi/GitHub/serverless-benchmarks", 1024) = 41
+newfstatat(AT_FDCWD, "/home/chuqi/GitHub/serverless-benchmarks/benchmarks/100.webapps/110.dynamic-html/python/function.py", {st_mode=S_IFREG|0644, st_size=801, ...}, 0) = 0
+openat(AT_FDCWD, "/home/chuqi/GitHub/serverless-benchmarks/benchmarks/100.webapps/110.dynamic-html/python/__pycache__/function.cpython-310.pyc", O_RDONLY|O_CLOEXEC) = 4
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=897, ...}, AT_EMPTY_PATH) = 0
+ioctl(4, TCGETS, 0x7ffe2584df20)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(4, 0, SEEK_CUR)                   = 0
+lseek(4, 0, SEEK_CUR)                   = 0
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=897, ...}, AT_EMPTY_PATH) = 0
+read(4, "o\r\r\n\0\0\0\0\30\350\211h!\3\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 898) = 897
+read(4, "", 1)                          = 0
+close(4)                                = 0
+openat(AT_FDCWD, "/home/chuqi/GitHub/serverless-benchmarks/benchmarks/100.webapps/110.dynamic-html/python/templates/template.html", O_RDONLY|O_CLOEXEC) = 4
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=693, ...}, AT_EMPTY_PATH) = 0
+ioctl(4, TCGETS, 0x7ffe2584e4d0)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(4, 0, SEEK_CUR)                   = 0
+ioctl(4, TCGETS, 0x7ffe2584e320)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(4, 0, SEEK_CUR)                   = 0
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=693, ...}, AT_EMPTY_PATH) = 0
+read(4, "<!DOCTYPE html>\n<html>\n  <head>\n"..., 694) = 693
+read(4, "", 1)                          = 0
+close(4)                                = 0
+write(1, "HTML generated successfully\n", 28) = 28
+wait4(228668, 0x7ffe2584e33c, WNOHANG, NULL) = 0
+kill(228668, SIGINT)                    = 0
